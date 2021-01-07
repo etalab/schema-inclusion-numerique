@@ -1,0 +1,4 @@
+Public
+Privé
+Public-privé
+Autre / Inconnu

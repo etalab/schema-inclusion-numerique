@@ -1,0 +1,34 @@
+modele_schema,modele_db,commentaire
+nom,name,
+structure_porteuse,supporting_structure_name,
+description,description,
+type_lieu,type,"'type' is a CharField with choices and default"
+statut,status,"'status' is a CharField with choices and default"
+nature_juridique,legal_entity_type,"'legal_entity_type' is a CharField with choices and default"
+siret,siret,
+adresse_brut,address_raw,
+adresse_numero,address_housenumber,
+adresse_rue,address_street,
+adresse_code_postal,address_postcode,
+adresse_code_insee,address_citycode,
+adresse_commune,address_city,
+adresse_departement,address_departement_name,"Missing 'address_departement_code'"
+adresse_region,address_region_name,
+latitude,latitude,
+longitude,longitude,
+itinerant,is_itinerant,"'itinerant' is a string, 'is_itinerant' is a BooleanField. Missing 'itinerant_details'"
+en_ligne,is_online,"'en_ligne' is a string 'Oui' or 'Non', 'is_online' is a BooleanField"
+contact_telephone,contact_phone,"Missing 'contact_phone_raw'"
+contact_telephone_details,contact_phone_details,
+contact_email,contact_email,"'contact_email' is a EmailField"
+contact_web,contact_website_url,"'contact_website_url' is a UrlField"
+contact_facebook,contact_facebook_url,"'contact_facebook_url' is a UrlField. Missing 'contact_twitter_url' and 'contact_youtube_url'"
+horaires_ouverture_brut,opening_hours_raw,
+horaires_ouverture_osm,opening_hours_osm_format,"Missing 'opening_hours_details'"
+public_cible,target_audience,
+modalites_acces,support_access,
+modalites_accompagnement,support_mode,
+tarifs,price,"Missing 'is_free' and 'price_details'"
+accessibilite,accessibility,
+services,service__name,
+labels,labels,

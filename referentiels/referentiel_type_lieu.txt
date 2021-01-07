@@ -1,0 +1,18 @@
+Administration / Collectivité territoriale
+Association
+Bibliothèque / Médiathèque
+Commune (Ville, CCAS, Centre Culturel...)
+Centre social
+Département (UTPAS, MDS, MDSI, UTAS...)
+Espace Public Numérique (EPN)
+Organisme de formations
+Intercommunalité (EPCI)
+La Poste
+Maison de quartier
+Maison de Service au Public (MSAP)
+Pôle Emploi
+Point Information Médiation Multi Services (PIMMS)
+Préfecture, Sous-Préfecture
+Organisme de sécurité sociale (CAF, CPAM, CARSAT, MSA...)
+Tiers-lieu / Coworking / FabLab / Hackerspace
+Autre / Inconnu
