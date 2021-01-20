@@ -2,24 +2,67 @@
   "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
   "name": "lieux-inclusion-numerique",
   "title": "Lieux d’inclusion numérique",
-  "description": "",
-  "keywords": [],
+  "description": "Spécification des lieux d'inclusion numérique",
+  "keywords": [
+    "inclusion",
+    "numerique"
+  ],
   "countryCode": "FR",
-  "homepage": "",
+  "homepage": "https://github.com/etalab/schema-inclusion-numerique",
   "path": "",
   "image": "",
-  "licences": [],
-  "ressources": [],
+  "licenses": [
+    {
+      "title": "Licence Ouverte",
+      "name": "etalab-2.0",
+      "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Ressource valide",
+      "name": "exemple-valide",
+      "path": "https://github.com/etalab/schema-inclusion-numerique/raw/v0.1.1/exemple-valide.csv"
+    }
+  ],
   "sources": [],
   "created": "2020-09-06",
-  "lastModified": "2020-09-06",
-  "version": "0.1.0",
-  "contributors": [],
+  "lastModified": "2020-01-18",
+  "version": "0.1.1",
+  "contact":"carto@aidantsconnect.beta.gouv.fr",
+  "uri":"https://github.com/etalab/schema-inclusion-numerique/raw/v0.1.1/schema.json",
+  "example":"https://github.com/etalab/schema-inclusion-numerique/raw/v0.1.1/exemple-valide.csv",
+  "contributors": [
+    {
+      "title": "Raphael Odini",
+      "email": "carto@aidantsconnect.beta.gouv.fr",
+      "organisation": "https://aidantsconnect.beta.gouv.fr/",
+      "role": "contributor"
+    },
+    {
+      "title": "Camille Fwok",
+      "email": "carto@aidantsconnect.beta.gouv.fr",
+      "organisation": "https://aidantsconnect.beta.gouv.fr/",
+      "role": "contributor"
+    },
+    {
+      "title": "Gabriel Fonlladosa",
+      "email": "carto@aidantsconnect.beta.gouv.fr",
+      "organisation": "https://aidantsconnect.beta.gouv.fr/",
+      "role": "contributor"
+    },
+    {
+      "title": "Geoffrey Aldebert",
+      "email": "schema@data.gouv.fr",
+      "organisation": "https://www.etalab.gouv.fr/",
+      "role": "contributor"
+    }
+  ],
   "fields": [
     {
       "name": "nom",
       "description": "Le nom du lieu",
-      "exemple": "Médiathèque d'Oullins",
+      "example": "Médiathèque d'Oullins",
       "type": "string",
       "constraints": {
         "required": true
@@ -28,7 +71,7 @@
     {
       "name": "structure_porteuse",
       "description": "Le nom de la structure porteuse du lieu",
-      "exemple": "Mairie de Bron",
+      "example": "Mairie de Bron",
       "type": "string",
       "constraints": {
         "required": false
@@ -37,7 +80,7 @@
     {
       "name": "description",
       "description": "Une description du lieu",
-      "exemple": "Un lieu permettant l'inclusion numérique des plus fragiles et faire des nouvelles technologies un levier d'insertion sociale.",
+      "example": "Un lieu permettant l'inclusion numérique des plus fragiles et faire des nouvelles technologies un levier d'insertion sociale.",
       "type": "string",
       "constraints": {
         "required": false
@@ -46,7 +89,7 @@
     {
       "name": "type_lieu",
       "description": "La typologie du lieu",
-      "exemple": "Bibliothèque / Médiathèque",
+      "example": "Bibliothèque / Médiathèque",
       "type": "string",
       "constraints": {
         "required": false,
@@ -75,7 +118,7 @@
     {
       "name": "statut",
       "description": "Le statut du lieu",
-      "exemple": "Public",
+      "example": "Public",
       "type": "string",
       "constraints": {
         "required": false,
@@ -90,7 +133,7 @@
     {
       "name": "nature_juridique",
       "description": "La nature juridique du lieu",
-      "exemple": "Association",
+      "example": "Association",
       "type": "string",
       "constraints": {
         "required": false,
@@ -115,7 +158,7 @@
     {
       "name": "siret",
       "description": "Identifiant INSEE de l'établissement ou de l'entreprise (SIRET)",
-      "exemple": "36252187900034",
+      "example": "36252187900034",
       "type": "string",
       "constraints": {
         "required": false,
@@ -125,7 +168,7 @@
     {
       "name": "adresse_brut",
       "description": "L'adresse complète brut",
-      "exemple": "10 Avenue Charles de Gaulle, 38000 GRENOBLE",
+      "example": "10 Avenue Charles de Gaulle, 38000 GRENOBLE",
       "type": "string",
       "constraints": {
         "required": false
@@ -134,7 +177,7 @@
     {
       "name": "adresse_numero",
       "description": "Le numéro avec indice de répétition éventuel (bis, ter, A, B)",
-      "exemple": "10",
+      "example": "10",
       "type": "string",
       "constraints": {
         "required": false
@@ -143,7 +186,7 @@
     {
       "name": "adresse_rue",
       "description": "Le nom de la rue",
-      "exemple": "Avenue Charles de Gaulle",
+      "example": "Avenue Charles de Gaulle",
       "type": "string",
       "constraints": {
         "required": false
@@ -152,7 +195,7 @@
     {
       "name": "adresse_code_postal",
       "description": "Le code postal",
-      "exemple": "38000",
+      "example": "38000",
       "type": "string",
       "constraints": {
         "required": false,
@@ -162,7 +205,7 @@
     {
       "name": "adresse_code_insee",
       "description": "Le code INSEE de la commune",
-      "exemple": "38185",
+      "example": "38185",
       "type": "string",
       "constraints": {
         "required": false,
@@ -172,7 +215,7 @@
     {
       "name": "adresse_commune",
       "description": "Le nom de la commune",
-      "exemple": "Grenoble",
+      "example": "Grenoble",
       "type": "string",
       "constraints": {
         "required": false
@@ -181,7 +224,7 @@
     {
       "name": "adresse_departement",
       "description": "Le nom du département",
-      "exemple": "Isère",
+      "example": "Isère",
       "type": "string",
       "constraints": {
         "required": false
@@ -190,7 +233,7 @@
     {
       "name": "adresse_region",
       "description": "Le nom de la région",
-      "exemple": "Auvergne-Rhône-Alpes",
+      "example": "Auvergne-Rhône-Alpes",
       "type": "string",
       "constraints": {
         "required": false
@@ -199,7 +242,7 @@
     {
       "name": "latitude",
       "description": "La latitude (coordonnée géographique) en degrés décimaux (point comme séparateur décimal, avec au moins 4 chiffres après le point décimal) de la localisation du lieu exprimée dans le système de coordonnées WGS84.",
-      "exemple": "45.1885",
+      "example": "45.1885",
       "type": "number",
       "constraints": {
         "required": false,
@@ -210,7 +253,7 @@
     {
       "name": "longitude",
       "description": "La longitude (coordonnée géographique) en degrés décimaux (point comme séparateur décimal, avec au moins 4 chiffres après le point décimal) de la localisation du lieu exprimée dans le système de coordonnées WGS84.",
-      "exemple": "5.7245",
+      "example": "5.7245",
       "type": "number",
       "constraints": {
         "required": false,
@@ -221,7 +264,7 @@
     {
       "name": "itinerant",
       "description": "Le lieu est-il itinérant ? Si oui, spécifier les détails ou mettre juste 'Oui'. Si le lieu n'est pas itinérant, laisser vide.",
-      "exemple": "",
+      "example": "",
       "type": "string",
       "constraints": {
         "required": false
@@ -230,7 +273,7 @@
     {
       "name": "en_ligne",
       "description": "Le lieu est-il uniquement en ligne ?",
-      "exemple": "Non",
+      "example": "Non",
       "type": "boolean",
       "trueValues": [
         "Oui"
@@ -246,7 +289,7 @@
     {
       "name": "contact_telephone",
       "description": "Le numéro de téléphone du lieu",
-      "exemple": "0123456789",
+      "example": "0123456789",
       "type": "string",
       "constraints": {
         "required": false,
@@ -256,7 +299,7 @@
     {
       "name": "contact_telephone_details",
       "description": "Le details du numéro de téléphone (horaires, prix, ...)",
-      "exemple": "De 9h à 18h, tous les jours sauf le Dimanche.",
+      "example": "De 9h à 18h, tous les jours sauf le Dimanche.",
       "type": "string",
       "constraints": {
         "required": false
@@ -265,7 +308,7 @@
     {
       "name": "contact_email",
       "description": "Le courriel du lieu",
-      "exemple": "exemple@email.fr",
+      "example": "exemple@email.fr",
       "type": "string",
       "format": "email",
       "constraints": {
@@ -275,7 +318,7 @@
     {
       "name": "contact_web",
       "description": "L'adresse du site internet du lieu",
-      "exemple": "https://www.example.fr",
+      "example": "https://www.example.fr",
       "type": "string",
       "format": "uri",
       "constraints": {
@@ -285,7 +328,7 @@
     {
       "name": "contact_facebook",
       "description": "L'adresse de la page Facebook du lieu",
-      "exemple": "https://www.facebook.com/exemple/",
+      "example": "https://www.facebook.com/exemple/",
       "type": "string",
       "format": "uri",
       "constraints": {
@@ -295,7 +338,7 @@
     {
       "name": "horaires_ouverture_brut",
       "description": "Les jours et horaires d'ouverture du lieu brut",
-      "exemple": "De 9h30 à 17h30, du Mardi au Samedi",
+      "example": "De 9h30 à 17h30, du Mardi au Samedi",
       "type": "string",
       "constraints": {
         "required": false
@@ -313,7 +356,7 @@
     {
       "name": "public_cible",
       "description": "Public(s) cible. Une ou plusieurs valeurs possibles, séparés par une virgule. Si le champs comporte plusieurs valeurs, il est nécessaire l'ensemble de la chaîne de caractères par des guillemets doubles.",
-      "exemple": "Tout public",
+      "example": "Tout public",
       "type": "string",
       "constraints": {
         "required": false,
@@ -323,7 +366,7 @@
     {
       "name": "modalites_acces",
       "description": "Modalité(s) d'accès. Une ou plusieurs valeurs possibles, séparés par une virgule. Si le champs comporte plusieurs valeurs, il est nécessaire l'ensemble de la chaîne de caractères par des guillemets doubles.",
-      "exemple": "Sur inscription ou rendez-vous,Adhérents",
+      "example": "Sur inscription ou rendez-vous,Adhérents",
       "type": "string",
       "constraints": {
         "required": false,
@@ -333,7 +376,7 @@
     {
       "name": "modalites_accompagnement",
       "description": "Modalité(s) d'accompagnement. Une ou plusieurs valeurs possibles, séparés par une virgule. Si le champs comporte plusieurs valeurs, il est nécessaire l'ensemble de la chaîne de caractères par des guillemets doubles.",
-      "exemple": "Individuel,Collectif",
+      "example": "Individuel,Collectif",
       "type": "string",
       "constraints": {
         "required": false,
@@ -343,7 +386,7 @@
     {
       "name": "tarifs",
       "description": "Tarifs. Une ou plusieurs valeurs possibles, séparés par une virgule. Si le champs comporte plusieurs valeurs, il est nécessaire l'ensemble de la chaîne de caractères par des guillemets doubles.",
-      "exemple": "Gratuit",
+      "example": "Gratuit",
       "type": "string",
       "constraints": {
         "required": false,
@@ -353,7 +396,7 @@
     {
       "name": "accessibilite",
       "description": "Accessibilité. Une ou plusieurs valeurs possibles, séparés par une virgule. Si le champs comporte plusieurs valeurs, il est nécessaire l'ensemble de la chaîne de caractères par des guillemets doubles.",
-      "exemple": "Handicap visuel,Handicap auditif",
+      "example": "Handicap visuel,Handicap auditif",
       "type": "string",
       "constraints": {
         "required": false,
@@ -363,7 +406,7 @@
     {
       "name": "services",
       "description": "Service(s) proposé(s). Une ou plusieurs valeurs possibles, séparés par une virgule. Si le champs comporte plusieurs valeurs, il est nécessaire l'ensemble de la chaîne de caractères par des guillemets doubles.",
-      "exemple": "Accompagnement aux démarches administratives en ligne,Acquisition de compétences numériques,Évaluation de compétences numériques",
+      "example": "Accompagnement aux démarches administratives en ligne,Acquisition de compétences numériques,Évaluation de compétences numériques",
       "type": "string",
       "constraints": {
         "required": false,
@@ -373,7 +416,7 @@
     {
       "name": "labels",
       "description": "Label(s). Une ou plusieurs valeurs possibles, séparés par une virgule. Si le champs comporte plusieurs valeurs, il est nécessaire l'ensemble de la chaîne de caractères par des guillemets doubles.",
-      "exemple": "Aidants Connect,APTIC",
+      "example": "Aidants Connect,APTIC",
       "type": "string",
       "constraints": {
         "required": false,
