@@ -19,8 +19,8 @@ Cette cartographie nationale des lieux d'inclusion numérique est destinée aux 
 
 ## Description du schéma
 
-  * [Description détaillée (champ par champ) du modèle de données].(https://github.com/betagouv/Aidants_Connect_Carto/wiki/Sch%C3%A9ma-:-description-du-mod%C3%A8le-de-donn%C3%A9e-(v1))
-  * Ce schéma respecte le standard Table Schema. [Pour en savoir plus, voir la page dédiée à Table Schema].(https://github.com/betagouv/Aidants_Connect_Carto/wiki/Sch%C3%A9ma-%3A-introduction-%C3%A0-Table-Schema)
+  * [Description détaillée (champ par champ) du modèle de données.](https://github.com/betagouv/Aidants_Connect_Carto/wiki/Sch%C3%A9ma-:-description-du-mod%C3%A8le-de-donn%C3%A9e-(v1))
+  * Ce schéma respecte le standard Table Schema. [Pour en savoir plus, voir la page dédiée à Table Schema.](https://github.com/betagouv/Aidants_Connect_Carto/wiki/Sch%C3%A9ma-%3A-introduction-%C3%A0-Table-Schema)
 
 ## Lieux de l'inclusion numérique
 
