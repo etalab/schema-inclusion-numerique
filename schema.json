@@ -22,16 +22,16 @@
     {
       "title": "Ressource valide",
       "name": "exemple-valide",
-      "path": "https://github.com/etalab/schema-inclusion-numerique/raw/v0.1.1/exemple-valide.csv"
+      "path": "https://github.com/etalab/schema-inclusion-numerique/raw/v0.1.2/exemple-valide.csv"
     }
   ],
   "sources": [],
   "created": "2020-09-06",
-  "lastModified": "2020-01-18",
-  "version": "0.1.1",
+  "lastModified": "2021-10-20",
+  "version": "0.1.2",
   "contact":"carto@aidantsconnect.beta.gouv.fr",
-  "uri":"https://github.com/etalab/schema-inclusion-numerique/raw/v0.1.1/schema.json",
-  "example":"https://github.com/etalab/schema-inclusion-numerique/raw/v0.1.1/exemple-valide.csv",
+  "uri":"https://github.com/etalab/schema-inclusion-numerique/raw/v0.1.2/schema.json",
+  "example":"https://github.com/etalab/schema-inclusion-numerique/raw/v0.1.2/exemple-valide.csv",
   "contributors": [
     {
       "title": "Raphael Odini",
@@ -289,12 +289,8 @@
     {
       "name": "contact_telephone",
       "description": "Le numéro de téléphone du lieu",
-      "example": "0123456789",
-      "type": "string",
-      "constraints": {
-        "required": false,
-        "pattern": "^\\d{10}$"
-      }
+      "example": "01 23 45 67 89",
+      "type": "string"
     },
     {
       "name": "contact_telephone_details",
@@ -421,6 +417,20 @@
       "constraints": {
         "required": false,
         "pattern": "(?:(?:^|,)(France Services|APTIC|Aidants Connect|Fabriques de Territoire|Grande École du Numérique))+$"
+      }
+    }
+  ],
+  "custom_checks": [
+    {
+      "name": "phone-number-value",
+      "params": {
+        "column": "contact_telephone"
+      }
+    },
+    {
+      "name": "opening-hours-value",
+      "params": {
+        "column": "horaires_ouverture_osm"
       }
     }
   ]
